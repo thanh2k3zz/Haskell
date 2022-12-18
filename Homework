@@ -1,0 +1,39 @@
+
+-- Question 1
+-- Add the type signatures for the functions below and then remove the comments and try to compile.
+-- (Use the types presented in the lecture.)
+
+
+f1::Float->Float->Float
+-- f1 x y z = x ** (y/z)
+
+f2::Float->Float->Float
+-- f2 x y z = sqrt (x/y - z)
+
+
+f3::Bool->Bool->Bool
+-- f3 x y = [x == True] ++ [y]
+
+f4::Char->Char->Char->Bool
+-- f4 x y z = x == (y ++ z)
+
+
+-- Question 2
+-- Why should we define type signatures of functions? How can they help you? How can they help others?
+Bởi vì khi ta mong muốn một output ra đúng kiểu thì ta cần định nghĩa kiểu cho hàm. Và trong Haskell ta không thể thay đổi giá trị của biến đã được định nghĩa trước đó.
+
+
+-- Question 3
+-- Why should you define type signatures for variables? How can they help you?
+Kiểu dữ liệu của biến được định nghĩa thì đồng nghĩa với việc ta sẽ hiểu được input đầu vào là kiểu dữ liệu nào và chính xác hơn khi nhập input.
+
+
+-- Question 4
+-- Are there any functions in Haskell that let you transform one type to the other? Try googling for the answer.
+Trong Haskell thì nó không ưu tiên việc chuyển đổi kiểu dữ liệu nhưng nếu bắt buộc, ta có thể dùng round, ceiling, floor. Cách này chỉ yêu cầu chức năng cho
+việc chuyển đổi.
+
+
+-- Question 5
+-- Can you also define in Haskell list of lists? Did we showed any example of that? How would you access the inner
+-- most elements?
